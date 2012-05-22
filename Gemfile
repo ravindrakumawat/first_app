@@ -4,8 +4,9 @@ gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'mysql2'
+group :development do
+  gem 'mysql2'
+end
 
 group :production do
   gem 'pg'
@@ -19,7 +20,7 @@ group :assets do
   gem 'coffee-rails', '3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platform => :ruby
+  gem 'therubyracer'
 
   gem 'uglifier', '1.2.3'
 end
